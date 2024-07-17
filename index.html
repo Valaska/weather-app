@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Val Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body>
-    <head>
+  <body class="weather-app">
+    <header>
       <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="search-text-box"
+        />
+        <input type="submit" value="Search" class="search-button" />
       </form>
-    </head>
+    </header>
     <main>
-      <h1>Paris</h1>
-      <div>
-        <p>
-          Friday 23:30, clear sky
-          <br />
-          Humidity: 63%, Wind: 2.57km/h
-        </p>
-      </div>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Friday 23:30, clear sky
+            <br />
+            Humidity: <strong>63%</strong>, Wind: <strong>2.57km/h</strong>
+          </p>
+        </div>
 
-      <div>☁️ 12 °C</div>
+        <div class="weather-app-temp-container">
+          <div class="weather-app-icon">☁️</div>
+          <div class="weather-app-temp">12</div>
+          <div class="weather-app-unit">°C</div>
+        </div>
+      </div>
     </main>
     <footer>
       Coded by
