@@ -8,12 +8,13 @@
   </head>
   <body class="weather-app">
     <header>
-      <form>
+      <form id = "search-form">
         <input
           type="search"
           placeholder="Enter a city.."
           required
           class="search-text-box"
+          id = "search-form-input"
         />
         <input type="submit" value="Search" class="search-button" />
       </form>
@@ -21,7 +22,7 @@
     <main>
       <div class="weather-app-data">
         <div>
-          <h1 class="weather-app-city">Paris</h1>
+          <h1 class="weather-app-city" id = "city">Paris</h1>
           <p class="weather-app-details">
             Friday 23:30, clear sky
             <br />
@@ -46,5 +47,7 @@
       and website hosted on
       <a href="https://val-weather-app.netlify.app/" target="_blank">Netlify</a>
     </footer>
+    <script src="src/app.js"></script>
+   
   </body>
 </html>
