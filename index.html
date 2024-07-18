@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Val Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body class="weather-app">
     <header>
-      <form id = "search-form">
+      <form id="search-form">
         <input
           type="search"
           placeholder="Enter a city.."
           required
           class="search-text-box"
-          id = "search-form-input"
+          id="search-form-input"
         />
         <input type="submit" value="Search" class="search-button" />
       </form>
@@ -22,7 +23,7 @@
     <main>
       <div class="weather-app-data">
         <div>
-          <h1 class="weather-app-city" id = "city">Paris</h1>
+          <h1 class="weather-app-city" id="city"></h1>
           <p class="weather-app-details">
             Friday 23:30, clear sky
             <br />
@@ -32,7 +33,7 @@
 
         <div class="weather-app-temp-container">
           <div class="weather-app-icon">☁️</div>
-          <div class="weather-app-temp">12</div>
+          <div class="weather-app-temp" id = "temperature"></div>
           <div class="weather-app-unit">°C</div>
         </div>
       </div>
@@ -48,6 +49,5 @@
       <a href="https://val-weather-app.netlify.app/" target="_blank">Netlify</a>
     </footer>
     <script src="src/app.js"></script>
-   
   </body>
 </html>
